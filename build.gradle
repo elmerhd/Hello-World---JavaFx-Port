@@ -1,0 +1,50 @@
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.javafxports:jfxmobile-plugin:1.3.13'
+    }
+}
+
+apply plugin: 'org.javafxports.jfxmobile'
+
+mainClassName = 'com.junk.application.helloworld.App'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+jfxmobile {
+    
+    javafxportsVersion = '8.60.9'
+
+    android {
+    	applicationPackage = 'com.junk.application.helloworld'
+        compileSdkVersion = 24 // Android API version
+        minSdkVersion = 24 //Minimum Android API version
+        targetSdkVersion = 24 //API version that application targets
+        androidSdk = 'C:/Users/Idiosyncratic Genius/AppData/Local/Android/Sdk'
+        dexOptions {
+            javaMaxHeapSize '3g'
+        }
+    }
+    
+}
+dependencies {
+    
+    implementation files('lib/jfoenix-8.0.7-retrolambda.jar')
+    desktopImplementation files('lib/jfoenix-8.0.7-retrolambda.jar')
+    androidImplementation files('lib/jfoenix-8.0.7-retrolambda.jar')
+    
+    compile files('lib/jfoenix-8.0.7-retrolambda.jar')
+    desktopCompile files('lib/jfoenix-8.0.7-retrolambda.jar')
+    androidCompile files('lib/jfoenix-8.0.7-retrolambda.jar')
+    
+}
+
