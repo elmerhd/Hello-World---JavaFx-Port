@@ -29,7 +29,7 @@ jfxmobile {
         compileSdkVersion = 24 // Android API version
         minSdkVersion = 24 //Minimum Android API version
         targetSdkVersion = 24 //API version that application targets
-        androidSdk = 'C:/Users/Idiosyncratic Genius/AppData/Local/Android/Sdk'
+        androidSdk = 'C:/Users/Elmer/AppData/Local/Android/Sdk'
         dexOptions {
             javaMaxHeapSize '3g'
         }
